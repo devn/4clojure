@@ -75,7 +75,7 @@
      [:div#top
       [:img#logo {:src "/images/logo.png"}]]
      
-     [:div#content
+     [:div#wrapper
       (if  (session/session-get :user)
         [:div#account
          [:a {:href "/login/update"} "Account Settings"]])
